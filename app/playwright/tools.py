@@ -9,22 +9,23 @@ from langchain_community.tools.playwright.utils import (
 from langchain_core.tools import BaseTool
 from pydantic import BaseModel, typing
 
-from app.agent.tools.ExtractTextTool import CustomExtractTextTool
+from app.agent.tools.extract_text_tool import CustomExtractTextTool
+from app.playwright.custom_toolkit import CustomPlayWrightBrowserToolkit
 
 
 class BrowserToolkit:
     def __init__(self):
         self.async_browser = None
         self.sync_browser = create_sync_playwright_browser(headless=False)
-        self.toolkit = PlayWrightBrowserToolkit.from_browser(sync_browser=self.sync_browser)
+        self.toolkit = CustomPlayWrightBrowserToolkit.from_browser(sync_browser=self.sync_browser)
         self.tools = self.toolkit.get_tools()
-        self.custom_extract_text_tool = CustomExtractTextTool.from_browser(sync_browser=self.sync_browser, async_browser=self.async_browser)
+        # self.custom_extract_text_tool = ExtractTextTool.from_browser(sync_browser=self.sync_browser, async_browser=self.async_browser)
 
 
     def get_tools(self):
         all_tools = [tool.name for tool in self.tools]
         can_be_processed_tools = []
-        for tool in self.tools + typing.cast(List[BaseTool], [self.custom_extract_text_tool]):
+        for tool in self.tools:# + typing.cast(List[BaseTool], [self.custom_extract_text_tool]):
             try:
                 cast = str(tool.args)
                 can_be_processed_tools.append(tool)

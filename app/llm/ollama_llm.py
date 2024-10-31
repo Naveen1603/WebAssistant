@@ -4,8 +4,8 @@ from langchain_core.prompts import ChatPromptTemplate
 
 LLAMA_MODEL = OllamaLLM(model="llama3.2")
 LLAMA_CHAT_MODEL = ChatOllama(
-                model = "llama3.2",
-                temperature = 0.8,
+                model = "gemma2:9b",
+                temperature = 0.5,
                 num_predict = 256,
                 # other params ...
             )
@@ -22,5 +22,5 @@ if __name__ == '__main__':
 
     chain = prompt | model
 
-    res = chain.invoke({"question": "Navigate to amazon.com and look for iphone 15"})
+    res = chain.invoke({"question": "Navigate to amazon.com and extract all text"})
     print(res)

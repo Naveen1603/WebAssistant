@@ -11,7 +11,7 @@ prompt = hub.pull("hwchase17/structured-chat-agent")
 # llm = ChatAnthropic(
 #     model_name="claude-3-haiku-20240307", temperature=0
 # )
-
+print(prompt)
 toolkit = BrowserToolkit()
 
 # llm = ChatOpenAI(temperature=0, model="gpt-3.5-turbo-1106")

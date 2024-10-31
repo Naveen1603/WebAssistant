@@ -11,6 +11,7 @@ def print_hi(name):
     print(f'Hi, {name}')  # Press Ctrl+F8 to toggle the breakpoint.
 
 def my_func():
+    print(agent_executor.to_json())
     invoke = agent_executor.invoke({"input": "Navigate to amazon.com and search for Iphone 15 then click on the page results to extract device specifications and price"})
     # result = await agent_chain.arun("What are the headers on langchain.com?")
     print(invoke)
