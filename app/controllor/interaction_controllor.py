@@ -43,7 +43,7 @@ def track_interaction():
     """
     try:
         interactions = request.json.get('interactions', [])
-        response_status = service.process_interactions(interactions)
+        response_status = service.store_interaction(interactions)
         # Get JSON data from request
         # interaction_data = request.get_json()
         #
@@ -57,7 +57,7 @@ def track_interaction():
         print("Received interaction:", interactions)
         # save_interaction(interaction_data)
         #
-        return response_status
+        return jsonify({"status": "success", "message": "Interaction recorded"}), 200
     except Exception as e:
         print("Exception occured while saving interaction", e)
 

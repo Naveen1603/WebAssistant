@@ -1,0 +1,260 @@
+[
+    {
+        "interactions": [
+            {
+                "interactionId": "28a6bfe9-67cf-4489-b0e3-ad698ea60682",
+                "eventType": "click",
+                "elementText": null,
+                "pageURL": "https://www.flipkart.com/",
+                "data": null,
+                "scrollPosition": null,
+                "timestamp": "2024-11-03T13:14:23.983Z",
+                "selector": "INPUT.Pke_EE",
+                "xpath": "div[@id='container']/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/header[1]/div[1]/div[3]/form[1]/div[1]/div[2]/input[1]",
+                "description": "User performed a click on the element and class: Pke_EE (INPUT)"
+            },
+            {
+                "interactionId": "eb3fe16c-ec20-4ea7-bd0d-e4ad2986ec97",
+                "eventType": "input",
+                "elementText": null,
+                "pageURL": "https://www.flipkart.com/",
+                "data": "Iphone 15",
+                "scrollPosition": null,
+                "timestamp": "2024-11-03T13:14:26.730Z",
+                "selector": "INPUT.Pke_EE",
+                "xpath": "div[@id='container']/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/header[1]/div[1]/div[3]/form[1]/div[1]/div[2]/input[1]",
+                "description": "User performed a input by entering the value \"Iphone 15\""
+            },
+            {
+                "interactionId": "89c9cd4d-33e0-4791-8e6c-e756c2356d48",
+                "eventType": "click",
+                "elementText": null,
+                "pageURL": "https://www.flipkart.com/",
+                "data": null,
+                "scrollPosition": null,
+                "timestamp": "2024-11-03T13:14:26.731Z",
+                "selector": "BUTTON._2iLD__",
+                "xpath": "div[@id='container']/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/header[1]/div[1]/div[3]/form[1]/div[1]/button[1]",
+                "description": "User performed a click on the element and class: _2iLD__ (BUTTON)"
+            },
+            {
+                "interactionId": "f709e187-c09d-44c2-bd7d-ca0e0622a105",
+                "eventType": "click",
+                "elementText": null,
+                "pageURL": "https://www.flipkart.com/search?q=Iphone%2015&otracker=search&otracker1=search&marketplace=FLIPKART&as-show=on&as=off",
+                "data": null,
+                "scrollPosition": null,
+                "timestamp": "2024-11-03T13:14:28.639Z",
+                "selector": "DIV.KzDlHZ",
+                "xpath": "div[@id='container']/div[1]/div[3]/div[1]/div[2]/div[2]/div[1]/div[1]/div[1]/a[1]/div[3]/div[1]/div[1]",
+                "description": "User performed a click on the element and class: KzDlHZ (DIV)"
+            },
+            {
+                "interactionId": "993b8ea9-0c67-4c52-889b-57f7b111704a",
+                "eventType": "click",
+                "elementText": null,
+                "pageURL": "https://www.flipkart.com/apple-iphone-15-black-256-gb/p/itm6f0727e3e3b52?pid=MOBGTAGPSMHFKHT5&lid=LSTMOBGTAGPSMHFKHT5QSQH4U&marketplace=FLIPKART&q=Iphone%2015&sattr[]=color&sattr[]=storage&st=storage",
+                "data": null,
+                "scrollPosition": null,
+                "timestamp": "2024-11-03T13:14:31.572Z",
+                "selector": "A.CDDksN",
+                "xpath": "li[@id='swatch-1-storage']/a[1]",
+                "description": "User performed a click on the element and class: CDDksN (A)"
+            }
+        ],
+        "received_at": "2024-11-03T13:14:33.995225"
+    },
+    {
+        "interactions": [
+            {
+                "interactionId": "3463eaae-8ae9-4098-b641-aa31ae7c2789",
+                "eventType": "click",
+                "elementText": null,
+                "pageURL": "https://www.flipkart.com/apple-iphone-15-black-512-gb/p/itm232a6b488abe2?pid=MOBGTAGPEXNGM7BM&lid=LSTMOBGTAGPEXNGM7BMOE3LR2&marketplace=FLIPKART&q=Iphone%2015&sattr[]=color&sattr[]=storage&st=storage&otracker=search",
+                "data": null,
+                "scrollPosition": null,
+                "timestamp": "2024-11-03T13:14:34.423Z",
+                "selector": "A.CDDksN",
+                "xpath": "li[@id='swatch-2-storage']/a[1]",
+                "description": "User performed a click on the element and class: CDDksN (A)"
+            }
+        ],
+        "received_at": "2024-11-03T13:14:43.998998"
+    },
+    {
+        "interactions": [
+            {
+                "interactionId": "170d4054-e3fc-419d-9773-0868d6276702",
+                "eventType": "click",
+                "elementText": null,
+                "pageURL": "https://www.flipkart.com/apple-iphone-15-black-512-gb/p/itm232a6b488abe2?pid=MOBGTAGPEXNGM7BM&lid=LSTMOBGTAGPEXNGM7BMOE3LR2&marketplace=FLIPKART&q=Iphone%2015&sattr[]=color&sattr[]=storage&st=storage&otracker=search",
+                "data": null,
+                "scrollPosition": 1100,
+                "timestamp": "2024-11-03T13:15:11.186Z",
+                "selector": "IMG.W5mR4e",
+                "xpath": "div[@id='container']/div[1]/div[1]/div[1]/div[2]/div[1]/div[1]/a[1]/img[1]",
+                "description": "User performed a click on the element and class: W5mR4e (IMG)"
+            },
+            {
+                "interactionId": "9a5b77dd-5650-4ca4-99ae-b32eaf1f7cd1",
+                "eventType": "click",
+                "elementText": null,
+                "pageURL": "https://www.flipkart.com/",
+                "data": null,
+                "scrollPosition": null,
+                "timestamp": "2024-11-03T13:15:13.385Z",
+                "selector": "INPUT.Pke_EE",
+                "xpath": "div[@id='container']/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/header[1]/div[1]/div[3]/form[1]/div[1]/div[2]/input[1]",
+                "description": "User performed a click on the element and class: Pke_EE (INPUT)"
+            },
+            {
+                "interactionId": "39c6a1e6-ad68-4e7b-bb53-1ae76a8af656",
+                "eventType": "input",
+                "elementText": null,
+                "pageURL": "https://www.flipkart.com/",
+                "data": "samsung s23",
+                "scrollPosition": null,
+                "timestamp": "2024-11-03T13:15:17.178Z",
+                "selector": "INPUT.Pke_EE",
+                "xpath": "div[@id='container']/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/header[1]/div[1]/div[3]/form[1]/div[1]/div[2]/input[1]",
+                "description": "User performed a input by entering the value \"samsung s23\""
+            },
+            {
+                "interactionId": "0c482c24-d770-4a41-91eb-ee802a4b0601",
+                "eventType": "click",
+                "elementText": null,
+                "pageURL": "https://www.flipkart.com/",
+                "data": null,
+                "scrollPosition": null,
+                "timestamp": "2024-11-03T13:15:17.179Z",
+                "selector": "BUTTON._2iLD__",
+                "xpath": "div[@id='container']/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/header[1]/div[1]/div[3]/form[1]/div[1]/button[1]",
+                "description": "User performed a click on the element and class: _2iLD__ (BUTTON)"
+            },
+            {
+                "interactionId": "353c83ca-1d0b-4921-8df3-6829b86b2e4b",
+                "eventType": "click",
+                "elementText": null,
+                "pageURL": "https://www.flipkart.com/search?q=samsung%20s23&otracker=search&otracker1=search&marketplace=FLIPKART&as-show=on&as=off",
+                "data": null,
+                "scrollPosition": null,
+                "timestamp": "2024-11-03T13:15:18.941Z",
+                "selector": "DIV.KzDlHZ",
+                "xpath": "div[@id='container']/div[1]/div[3]/div[1]/div[2]/div[2]/div[1]/div[1]/div[1]/a[1]/div[2]/div[1]/div[1]",
+                "description": "User performed a click on the element and class: KzDlHZ (DIV)"
+            }
+        ],
+        "received_at": "2024-11-03T13:15:21.199115"
+    },
+    {
+        "interactions": [
+            {
+                "interactionId": "262e58a1-fa92-4278-8d23-8db60950c8e9",
+                "eventType": "click",
+                "elementText": null,
+                "pageURL": "https://www.flipkart.com/samsung-galaxy-s23-5g-phantom-black-256-gb/p/itm347e695feffe7?pid=MOBGMFFXPNSHBGRC&lid=LSTMOBGMFFXPNSHBGRCPG5BZP&marketplace=FLIPKART&q=samsung%20s23&sattr[]=color&sattr[]=storage&st=storage",
+                "data": null,
+                "scrollPosition": null,
+                "timestamp": "2024-11-03T13:15:21.996Z",
+                "selector": "A.CDDksN",
+                "xpath": "li[@id='swatch-1-storage']/a[1]",
+                "description": "User performed a click on the element and class: CDDksN (A)"
+            },
+            {
+                "interactionId": "d72425e1-e823-4958-8d6c-45a8fa5e1380",
+                "eventType": "click",
+                "elementText": null,
+                "pageURL": "https://www.flipkart.com/samsung-galaxy-s23-5g-green-256-gb/p/itm6840743bfd1ef?pid=MOBGMFFXB7RGPNET&lid=LSTMOBGMFFXB7RGPNETJZGNDL&marketplace=FLIPKART&q=samsung%20s23&sattr[]=color&sattr[]=storage&st=color&otracker=search",
+                "data": null,
+                "scrollPosition": null,
+                "timestamp": "2024-11-03T13:15:24.308Z",
+                "selector": "DIV._0QyAeO",
+                "xpath": "li[@id='swatch-1-color']/a[1]/div[1]",
+                "description": "User performed a click on the element and class: _0QyAeO (DIV)"
+            },
+            {
+                "interactionId": "a8d65eb7-6085-49ef-85d5-29ffb800126c",
+                "eventType": "click",
+                "elementText": null,
+                "pageURL": "https://www.flipkart.com/samsung-galaxy-s23-5g-phantom-black-256-gb/p/itm347e695feffe7?pid=MOBGMFFXPNSHBGRC&lid=LSTMOBGMFFXPNSHBGRCPG5BZP&marketplace=FLIPKART&q=samsung%20s23&sattr[]=color&sattr[]=storage&st=color",
+                "data": null,
+                "scrollPosition": null,
+                "timestamp": "2024-11-03T13:15:26.175Z",
+                "selector": "DIV._0QyAeO",
+                "xpath": "li[@id='swatch-3-color']/a[1]/div[1]",
+                "description": "User performed a click on the element and class: _0QyAeO (DIV)"
+            }
+        ],
+        "received_at": "2024-11-03T13:15:31.197103"
+    },
+    {
+        "interactions": [
+            {
+                "interactionId": "9e04c9a4-bc1e-4eb2-9862-5b35fdce2db3",
+                "eventType": "click",
+                "elementText": null,
+                "pageURL": "https://www.flipkart.com/search?q=samsung+s23&otracker=search&otracker1=search&marketplace=FLIPKART&as-show=on&as=off&p%5B%5D=facets.price_range.from%3D30000&p%5B%5D=facets.price_range.to%3DMax",
+                "data": null,
+                "scrollPosition": null,
+                "timestamp": "2024-11-03T13:15:36.124Z",
+                "selector": "DIV.PYKUdo",
+                "xpath": "div[@id='container']/div[1]/div[3]/div[1]/div[1]/div[1]/div[1]/div[1]/section[3]/div[3]/div[1]/div[1]/div[1]",
+                "description": "User performed a click on the element and class: PYKUdo (DIV)"
+            },
+            {
+                "interactionId": "c44074db-18d8-4710-ac6d-fc863bb5d736",
+                "eventType": "click",
+                "elementText": null,
+                "pageURL": "https://www.flipkart.com/search?q=samsung+s23&otracker=search&otracker1=search&marketplace=FLIPKART&as-show=on&as=off&p%5B%5D=facets.price_range.from%3D30000&p%5B%5D=facets.price_range.to%3DMax&p%5B%5D=facets.brand%255B%255D%3DSAMSUNG",
+                "data": null,
+                "scrollPosition": null,
+                "timestamp": "2024-11-03T13:15:37.623Z",
+                "selector": "DIV.XqNaEv",
+                "xpath": "div[@id='container']/div[1]/div[3]/div[1]/div[1]/div[1]/div[1]/div[1]/section[4]/div[2]/div[1]/div[1]/div[1]/label[1]/div[2]",
+                "description": "User performed a click on the element and class: XqNaEv (DIV)"
+            },
+            {
+                "interactionId": "22b79b35-979d-48c0-9d4d-605e33513160",
+                "eventType": "click",
+                "elementText": null,
+                "pageURL": "https://www.flipkart.com/search?q=samsung+s23&otracker=search&otracker1=search&marketplace=FLIPKART&as-show=on&as=off&p%5B%5D=facets.price_range.from%3D30000&p%5B%5D=facets.price_range.to%3DMax&p%5B%5D=facets.brand%255B%255D%3DSAMSUNG&p%5B%5D=facets.rating%255B%255D%3D4%25E2%2598%2585%2B%2526%2Babove",
+                "data": null,
+                "scrollPosition": null,
+                "timestamp": "2024-11-03T13:15:39.670Z",
+                "selector": "DIV.XqNaEv",
+                "xpath": "div[@id='container']/div[1]/div[3]/div[1]/div[1]/div[1]/div[1]/div[1]/section[6]/div[2]/div[1]/div[1]/div[1]/label[1]/div[2]",
+                "description": "User performed a click on the element and class: XqNaEv (DIV)"
+            }
+        ],
+        "received_at": "2024-11-03T13:15:41.195404"
+    },
+    {
+        "interactions": [
+            {
+                "interactionId": "93f225ab-1648-42c4-a6ff-889e0c9f0675",
+                "eventType": "click",
+                "elementText": null,
+                "pageURL": "https://www.flipkart.com/search?q=samsung+s23&otracker=search&otracker1=search&marketplace=FLIPKART&as-show=on&as=off&p%5B%5D=facets.price_range.from%3D30000&p%5B%5D=facets.price_range.to%3DMax&p%5B%5D=facets.brand%255B%255D%3DSAMSUNG&p%5B%5D=facets.rating%255B%255D%3D4%25E2%2598%2585%2B%2526%2Babove",
+                "data": null,
+                "scrollPosition": 1800,
+                "timestamp": "2024-11-03T13:15:42.295Z",
+                "selector": "DIV.KzDlHZ",
+                "xpath": "div[@id='container']/div[1]/div[3]/div[1]/div[2]/div[9]/div[1]/div[1]/div[1]/a[1]/div[2]/div[1]/div[1]",
+                "description": "User performed a click on the element and class: KzDlHZ (DIV)"
+            },
+            {
+                "interactionId": "60f6be7d-5ace-4b2d-afeb-2b210473612c",
+                "eventType": "click",
+                "elementText": null,
+                "pageURL": "https://www.flipkart.com/samsung-galaxy-s23-5g-lavender-128-gb/p/itmd3e8445fc75c9?pid=MOBGNPGZFWUKKJGR&lid=LSTMOBGNPGZFWUKKJGRF0SBQA&marketplace=FLIPKART&q=samsung%20s23&sattr[]=color&sattr[]=storage&st=storage",
+                "data": null,
+                "scrollPosition": null,
+                "timestamp": "2024-11-03T13:15:45.938Z",
+                "selector": "A.CDDksN",
+                "xpath": "li[@id='swatch-0-storage']/a[1]",
+                "description": "User performed a click on the element and class: CDDksN (A)"
+            }
+        ],
+        "received_at": "2024-11-03T13:15:51.211885"
+    }
+]

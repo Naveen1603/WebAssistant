@@ -6,6 +6,7 @@ function generateUUID() {
         return v.toString(16);
     });
 }
+const interactionId=generateUUID();
 
 // Buffer to hold current interaction data
 let interactionBuffer = {};
@@ -28,27 +29,41 @@ function createDescription(eventType, element) {
     return description;
 }
 
+function getNearestText(element) {
+    const parentText = element.closest('*')?.textContent.trim();
+    const siblingText = Array.from(element.parentElement?.children || [])
+        .filter(sibling => sibling !== element)
+        .map(sibling => sibling.textContent.trim())
+        .filter(text => text.length)
+        .join(' ');
+    return (parentText || '') + ' ' + (siblingText || '').trim();
+}
+
 // Helper function to capture XPath of an element
 function getXPath(element) {
-    let path = '';
-    while (element) {
-        let name = element.localName;
-        if (!element.id) {
-            let siblings = Array.from(element.parentNode.children);
-            let index = siblings.indexOf(element) + 1;
-            path = `${name}[${index}]` + (path ? '/' + path : '');
-        } else {
-            path = `${name}[@id='${element.id}']` + (path ? '/' + path : '');
-            break;
+    let xpath = '';
+    while (element && element.nodeType === Node.ELEMENT_NODE) {
+        let index = 1;
+        let sibling = element.previousSibling;
+
+        // Count previous siblings of the same tag name
+        while (sibling) {
+            if (sibling.nodeType === Node.ELEMENT_NODE && sibling.nodeName === element.nodeName) {
+                index++;
+            }
+            sibling = sibling.previousSibling;
         }
+
+        const tagName = element.nodeName.toLowerCase();
+        xpath = `/${tagName}[${index}]` + xpath;
         element = element.parentNode;
     }
-    return path;
+    return xpath;
 }
+
 
 // Helper function to send or update an interaction in the buffer
 function aggregateInteraction(eventType, element, extraData = {}) {
-    const interactionId = generateUUID();
     const interactionKey = `${eventType}_${element.id || element.className || element.tagName}`;
     const currentTime = Date.now();
 
@@ -63,6 +78,7 @@ function aggregateInteraction(eventType, element, extraData = {}) {
         pageURL: window.location.href,
         scrollPosition: window.scrollY,
         data: eventType === "input" ? extraData.value : '', // Store latest value only
+        nearestText: getNearestText(element),
         timestamp: currentTime,
         description: createDescription(eventType, element) // Custom description for the interaction
     };

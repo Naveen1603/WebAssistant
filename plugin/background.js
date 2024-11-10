@@ -54,7 +54,8 @@ chrome.runtime.onMessage.addListener((message, sender, sendResponse) => {
             timestamp: new Date().toISOString(),
             selector: message.data.selector || null,  // CSS selector
             xpath: message.data.xpath || null,        // XPath
-            description: message.data.description || null // Custom description
+            description: message.data.description || null, // Custom description,
+            nearestText: message.data.nearestText || null
         };
 
         addInteractionToBuffer(interactionData);
