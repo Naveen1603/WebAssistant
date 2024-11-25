@@ -12,7 +12,10 @@ def print_hi(name):
 
 def my_func():
     print(agent_executor.to_json())
-    invoke = agent_executor.invoke({"input": "Navigate to amazon.com and search for Iphone 15 then click on the page results to extract device specifications and price"})
+    # invoke = agent_executor.invoke({"input": "Navigate to amazon.com and search for Iphone 15 then click on the page results to extract device specifications and price. Get the price of Iphone"})
+    PROMPT = "Navigate to amazon.com and search for Iphone 15 then click on the page results to extract device specifications and price. Get the price of Iphone"
+    PROMPT = "Who is the prime minister of india and his current age and get early life details"
+    invoke = agent_executor.invoke({"input": PROMPT})
     # result = await agent_chain.arun("What are the headers on langchain.com?")
     print(invoke)
 

@@ -10,6 +10,7 @@ const MAX_BATCH_SIZE = 20;        // Maximum number of events to batch
 
 let interactionBuffer = [];        // Buffer to hold interactions
 let timer;                         // Timer to send data periodically
+const interactionId = crypto.randomUUID();
 
 // Function to add interaction data to the buffer
 function addInteractionToBuffer(data) {
@@ -59,8 +60,14 @@ chrome.runtime.onMessage.addListener((message, sender, sendResponse) => {
         };
 
         addInteractionToBuffer(interactionData);
+        sendResponse({ status: "received" });
+    }else if (message.action === "getInteractionId") {
+        // Retrieve or generate a new interactionId
+        sendResponse({ interactionId: interactionId });
+
+        // Required to indicate async response
+        return true;
     }
-    sendResponse({ status: "received" });
 });
 
 // Start the periodic sending of interactions

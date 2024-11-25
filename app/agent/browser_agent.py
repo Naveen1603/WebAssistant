@@ -24,6 +24,6 @@ agent_chain = create_structured_chat_agent(
 
 # Create an agent executor by passing in the agent and tools
 agent_executor = AgentExecutor(
-    agent=agent_chain, tools=toolkit.tools, verbose=True, handle_parsing_errors=True
+    agent=agent_chain, tools=toolkit.tools, verbose=True, handle_parsing_errors=True, return_intermediate_steps=True
 )
 

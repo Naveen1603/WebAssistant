@@ -4,23 +4,20 @@ from __future__ import annotations
 
 from typing import TYPE_CHECKING, Any, List, Optional, Type, cast
 
-from langchain_core.tools import BaseTool, BaseToolkit
-from pydantic import ConfigDict, model_validator
-
 from langchain_community.tools.playwright.base import (
     BaseBrowserTool,
     lazy_import_playwright_browsers,
 )
-from langchain_community.tools.playwright.click import ClickTool
-from langchain_community.tools.playwright.current_page import CurrentWebPageTool
 from langchain_community.tools.playwright.extract_hyperlinks import (
     ExtractHyperlinksTool,
 )
 from langchain_community.tools.playwright.get_elements import GetElementsTool
 from langchain_community.tools.playwright.navigate import NavigateTool
-from langchain_community.tools.playwright.navigate_back import NavigateBackTool
+from langchain_core.tools import BaseTool, BaseToolkit
+from pydantic import ConfigDict, model_validator
 
 from app.agent.tools.back_page_tool import CustomNavigateBackTool
+from app.agent.tools.click_tool import CustomClickTool
 from app.agent.tools.current_page_tool import CustomCurrentWebPageTool
 from app.agent.tools.extract_text_tool import CustomExtractTextTool
 from app.agent.tools.fill_tool import FillTool
@@ -89,7 +86,7 @@ class CustomPlayWrightBrowserToolkit(BaseToolkit):
     def get_tools(self) -> List[BaseTool]:
         """Get the tools in the toolkit."""
         tool_classes: List[Type[BaseBrowserTool]] = [
-            ClickTool,
+            CustomClickTool,
             NavigateTool,
             CustomNavigateBackTool,
             CustomExtractTextTool,

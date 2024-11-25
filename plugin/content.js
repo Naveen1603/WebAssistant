@@ -1,12 +1,21 @@
 // Utility function to generate a random UUID
-function generateUUID() {
-    return 'xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx'.replace(/[xy]/g, (c) => {
-        const r = Math.random() * 16 | 0;
-        const v = c === 'x' ? r : (r & 0x3 | 0x8);
-        return v.toString(16);
+// Function to request interactionId from the background script
+// Call the function at the start to initialize interactionId
+let interactionId = null;
+
+function requestInteractionId() {
+    chrome.runtime.sendMessage({ action: "getInteractionId" }, function(response) {
+        if (response && response.interactionId) {
+            console.log("Retrieved interactionId:", response.interactionId);
+            interactionId=response.interactionId;
+        } else {
+            console.error("Failed to retrieve interactionId");
+        }
     });
 }
-const interactionId=generateUUID();
+
+// Call the function at the start to initialize interactionId
+requestInteractionId();
 
 // Buffer to hold current interaction data
 let interactionBuffer = {};
@@ -68,20 +77,30 @@ function aggregateInteraction(eventType, element, extraData = {}) {
     const currentTime = Date.now();
 
     // Create a new interaction record in the buffer
-    interactionBuffer[interactionKey] = {
-        interactionId,
-        eventType,
-        elementId: element.id,
-        elementClass: element.className,
-        selector: `${element.tagName}${element.id ? `#${element.id}` : ''}${element.className ? `.${element.className}` : ''}`,
-        xpath: getXPath(element),
-        pageURL: window.location.href,
-        scrollPosition: window.scrollY,
-        data: eventType === "input" ? extraData.value : '', // Store latest value only
-        nearestText: getNearestText(element),
-        timestamp: currentTime,
-        description: createDescription(eventType, element) // Custom description for the interaction
-    };
+    if (interactionBuffer[interactionKey]) {
+        const interaction = interactionBuffer[interactionKey];
+
+        // Update interaction with the latest data (e.g., append input value)
+        if (eventType === "input") {
+            interaction.data = extraData.value;
+        }
+        interaction.timestamp = currentTime;  // Update timestamp
+    }else{
+        interactionBuffer[interactionKey] = {
+            interactionId,
+            eventType,
+            elementId: element.id,
+            elementClass: element.className,
+            selector: `${element.tagName}${element.id ? `#${element.id}` : ''}${element.className ? `.${element.className}` : ''}`,
+            xpath: getXPath(element),
+            pageURL: window.location.href,
+            scrollPosition: window.scrollY,
+            data: eventType === "input" ? extraData.value : '', // Store latest value only
+            nearestText: getNearestText(element),
+            timestamp: currentTime,
+            description: createDescription(eventType, element) // Custom description for the interaction
+        };
+    }
 }
 
 // Function to send the final aggregated data for all interactions

@@ -15,9 +15,9 @@ from app.playwright.custom_toolkit import CustomPlayWrightBrowserToolkit
 
 class BrowserToolkit:
     def __init__(self):
-        self.async_browser = None
-        self.sync_browser = create_sync_playwright_browser(headless=False)
-        self.toolkit = CustomPlayWrightBrowserToolkit.from_browser(sync_browser=self.sync_browser)
+        self.async_browser = create_async_playwright_browser(headless=False)
+        # self.sync_browser = create_sync_playwright_browser(headless=False)
+        self.toolkit = CustomPlayWrightBrowserToolkit.from_browser(async_browser=self.async_browser)
         self.tools = self.toolkit.get_tools()
         # self.custom_extract_text_tool = ExtractTextTool.from_browser(sync_browser=self.sync_browser, async_browser=self.async_browser)
 

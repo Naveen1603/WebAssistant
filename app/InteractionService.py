@@ -12,6 +12,11 @@ from app.llm.embeddings.ollama_embeddings import embed
 class InteractionService:
     def __init__(self):
         self.driver = GraphDatabase.driver("neo4j+s://0fe3408d.databases.neo4j.io", auth=("neo4j", os.getenv('GRAPHDB_PASS')))
+        self.verify_connectivity()
+
+    def verify_connectivity(self):
+        print("Neo4j health check", self.driver.verify_connectivity())
+
     def parse_url(self, url):
         parsed = urlparse(url)
         search_path = parsed.path
