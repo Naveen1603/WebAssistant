@@ -7,8 +7,7 @@ This results were generated using a browser agent to execute prompts and actions
 
 ![Prompt Screenshot](https://raw.githubusercontent.com/Naveen1603/WebAssistant/master/results/amazon%20results/prompt.png)
 ## Video
-![Watch the video](https://raw.githubusercontent.com/Naveen1603/WebAssistant/master/results/amazon%20results/amazon_recording.mp4)
-
+<video src="https://github.com/user-attachments/assets/98e5a0d5-1114-4b3c-ab30-cfd2390f0b2d" controls="controls"  >Your browser does not support playing this video!</video>
 
 ## Final Result
 ```text
