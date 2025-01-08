@@ -1,0 +1,6 @@
+Device Name: Apple iPhone 15 (128 GB - Pink)
+Price: ₹60,499
+Specifications:
+- Memory Storage Capacity: 128 GB
+- Brand: Apple
+- Operating System: iOS
