@@ -7,7 +7,7 @@ This results were generated using a browser agent to execute prompts and actions
 
 ![Prompt Screenshot](https://raw.githubusercontent.com/Naveen1603/WebAssistant/master/results/amazon%20results/prompt.png)
 ## Video
-![Watch the video](https://raw.githubusercontent.com/Naveen1603/WebAssistant/master/results/amazon%20results/amazon_recording.webm)
+![Watch the video](https://raw.githubusercontent.com/Naveen1603/WebAssistant/master/results/amazon%20results/amazon_recording.mp4)
 
 
 ## Final Result
