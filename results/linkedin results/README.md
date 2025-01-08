@@ -6,8 +6,9 @@ This results were generated using a browser agent to execute prompts and actions
 ##### *go to linkedin search for \<name> and send a connection request with custom message.*
 
 ![Prompt Screenshot](https://raw.githubusercontent.com/Naveen1603/WebAssistant/master/results/linkedin%20results/prompt.png)
-## Video
-![Watch the video](https://raw.githubusercontent.com/Naveen1603/WebAssistant/master/results/linkedin%20results/linkedin.webm)
+
+## Demonstration
+<video src="https://github.com/user-attachments/assets/b321e8c3-27dc-4371-aa7d-5fa2a7bce757" controls="controls"  >Your browser does not support playing this video!</video>
 
 ## Final Result
 ![Result Screenshot](https://raw.githubusercontent.com/Naveen1603/WebAssistant/master/results/linkedin%20results/after_agent_execution.png)
