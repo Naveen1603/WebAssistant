@@ -6,9 +6,9 @@ This results were generated using a browser agent to execute prompts and actions
 ##### *Navigate to amazon.in and search for Iphone 15 then click on the page results to extract device specifications and price*
 
 ![Prompt Screenshot](https://raw.githubusercontent.com/Naveen1603/WebAssistant/master/results/amazon%20results/prompt.png)
-## Video
-![Watch the video](https://raw.githubusercontent.com/Naveen1603/WebAssistant/master/results/amazon%20results/amazon_recording.mp4)
 
+## Demonstation
+<video src="https://github.com/user-attachments/assets/98e5a0d5-1114-4b3c-ab30-cfd2390f0b2d" controls="controls"  >Your browser does not support playing this video!</video>
 
 ## Final Result
 ```text
