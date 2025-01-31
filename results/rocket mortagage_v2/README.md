@@ -17,6 +17,25 @@ This results were generated using a browser agent to execute prompts and actions
 ##### *Click 'Next' button after answering every question by selecting an appropriate option to move forward*
 
 ![Prompt Screenshot](https://raw.githubusercontent.com/Naveen1603/WebAssistant/master/results/rocket%20mortagage_v2/prompt.png)
-## Video
+## Demonstration
 
-<video src="https://github.com/user-attachments/assets/44491070-705b-4d7b-b622-5cd3270cbd29" controls="controls"  >Your browser does not support playing this video!</video>
+<video src="https://github.com/user-attachments/assets/37aba31a-967a-4cae-a273-693dc47e0369" controls="controls"  >Your browser does not support playing this video!</video>
+
+## Final Result
+```text
+Loan application for Racheal Jhonson completed successfully.  Summary of application:
+
+Borrower: Racheal Jhonson
+Address: 530 Carin PI, Anchorage, AK 99504
+Phone: (551) 234-5675
+Email: test@example.com
+Property Type: Investment Property
+Purchase Price: $450,000
+Down Payment: $200,000
+Credit Score: 720+
+Work Status: Employed
+Bankruptcy: No
+Military Service: No
+Real Estate Agent: Yes
+
+
