@@ -1,0 +1,35 @@
+#!/bin/bash
+
+# Variables
+AUTHOR="username"        # GitHub username of the contributor
+DEFAULT_BRANCH="main"    # The default branch (could also be 'master')
+START_DATE="2024-01-01"  # Start date for the query
+END_DATE="now"           # End date for the query
+
+# Initialize a list to store unique commit hashes
+declare -A unique_commits
+
+# Loop through all branches (including default)
+git branch -r | while read branch; do
+    echo "Checking branch: $branch"
+    
+    # Get commits by the author on each branch within the date range
+    commits=$(git log $branch --oneline --author="$AUTHOR" --since="$START_DATE" --until="$END_DATE" --pretty=format:"%H")
+    
+    # Add each commit hash to the unique_commits array (key is the commit hash)
+    while read -r commit_hash; do
+        unique_commits["$commit_hash"]=1
+    done <<< "$commits"
+done
+
+# Get merge commits by the author across all branches
+merge_commits=$(git log --merges --oneline --author="$AUTHOR" --since="$START_DATE" --until="$END_DATE" --pretty=format:"%H")
+
+# Loop over each merge commit and store it in the unique_commits array
+while read -r commit_hash; do
+    unique_commits["$commit_hash"]=1
+done <<< "$merge_commits"
+
+# Count the number of unique commits
+unique_commit_count=${#unique_commits[@]}
+echo "Total unique commits by $AUTHOR from $START_DATE to $END_DATE: $unique_commit_count"
